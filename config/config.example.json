@@ -1,36 +1,4 @@
 {
-  "company_code": "company-qtu",
-  "platform": "dingtalk",
-  "dws_cli_path": "",
-  "dingtalk_profile": "ding85e93b673b13923435c2f4657eb6378f:02013149212127600721",
-  "workspace_id": "2rqGd6ANBBKPEXaV",
-  "performance_folder_node_id": "AR4GpnMqJzrdkp6XfkGNPYY2JKe0xjE3",
-  "sales_plan_folder_node_id": "MNDoBb60VLpePDZwimGDEBn0VlemrZQ3",
-  "qtu_sales_plan": {
-    "manual_clear_ranges": ["D30:T31"],
-    "channels": [
-      {
-        "name": "天猫",
-        "node_id": "vy20BglGWOZYqj6lfgXeXOyA8A7depqY"
-      },
-      {
-        "name": "抖音",
-        "node_id": "ZgpG2NdyVXvdjmowfPn9npLe8MwvDqPk"
-      },
-      {
-        "name": "私域",
-        "node_id": "7NkDwLng8ZDjk7xwiN5v5ElaVKMEvZBY"
-      },
-      {
-        "name": "视频号",
-        "node_id": "EpGBa2Lm8aprmxdDiwKnKN2KJgN7R35y"
-      },
-      {
-        "name": "小红书",
-        "node_id": "6LeBq413JAKnmBMLF3d2lzR3WDOnGvpb"
-      }
-    ]
-  },
   "feishu_domain": "",
   "lark_cli_path": "",
   "policy_revision": {

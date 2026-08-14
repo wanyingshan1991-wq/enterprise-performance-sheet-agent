@@ -13,26 +13,21 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/4] Checking dws CLI
-set DWS_EXE=C:\Users\Administrator\.dws\data\backups\v1.0.50-20260714-093740\binary\dws.exe
-if exist "%DWS_EXE%" (
-  "%DWS_EXE%" --help >nul
+echo [2/4] Checking lark-cli
+where lark-cli >nul 2>nul
+if errorlevel 1 (
+  echo lark-cli was not found. Ask WorkBuddy/Codex to install it using README.
 ) else (
-  where dws >nul 2>nul
-  if errorlevel 1 (
-    echo dws CLI was not found. Ask WorkBuddy/Codex to enable DingTalk DWS.
-  ) else (
-    dws --help >nul
-    echo dws found in PATH
-  )
+  lark-cli --version
 )
 
 echo.
-echo [3/4] Checking DingTalk authorization
-if exist "%DWS_EXE%" (
-  "%DWS_EXE%" profile list --format json
+echo [3/4] Checking Feishu authorization
+where lark-cli >nul 2>nul
+if errorlevel 1 (
+  echo Skipped because lark-cli is missing.
 ) else (
-  dws profile list --format json
+  lark-cli auth status --json --verify
 )
 
 echo.
